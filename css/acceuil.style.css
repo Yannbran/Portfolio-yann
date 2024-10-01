@@ -1,0 +1,34 @@
+#acceuil-img {
+    width: 100%;
+    object-fit: cover;
+}
+#yann {
+    position: absolute;
+    width: auto;
+    top: 35%;
+    left: 20%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    padding: 1.5vw;
+}
+#yann h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 8vw;
+    font-weight: 100;
+    margin: 0;
+}
+#developer {
+    position: absolute;
+    width: auto;
+    top: 70%;
+    left: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    padding: 3vw;
+}
+#developer p {
+    font-size: 7vw;
+    margin: 0;
+}

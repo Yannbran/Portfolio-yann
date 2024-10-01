@@ -1,0 +1,20 @@
+#presentation h2  {
+    text-align: center;
+    font-size: 5vw;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 1vw;
+}
+#presentation div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    margin: 0 3vw;
+    border-radius: 20px;
+    font-size: 2.5vw;
+}
+#presentation p {
+    font-family: "Voltaire", sans-serif;
+    margin: 1.5vw;
+}

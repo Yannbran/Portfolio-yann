@@ -1,0 +1,30 @@
+#competences h2 {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 1vw;
+}
+.container-comp {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2vw;
+}
+.card {
+    width: 40%;
+    margin-bottom: 2vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1.5vw;
+    border-radius: 25px;
+}
+.card h3 {
+    font-size: 3vw;
+    font-weight: 80;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.card p {
+    text-align: center;
+    font-family: "Voltaire", sans-serif;
+    margin-top: 1vw;
+}
