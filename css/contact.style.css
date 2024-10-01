@@ -1,5 +1,49 @@
 #contact {
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center;
     margin-top: 1vw;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.contact-form h2 {
+    margin-bottom: 2vw;
+    color: #000;
+}
+.contact-form label {
+    display: block;
+    margin: 3vw auto 1vw auto;
+    color: #000;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 40%;
+    height: 3vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 2vw;
+    font-family: "Voltaire", sans-serif;
+}
+#message {
+    height: 10vw;
+}
+.contact-form button {
+    background-color: #000;
+    color: #fff;
+    width: 42%;
+    margin-top: 2vw;
+    font-size: 3vw;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #333;
 }
