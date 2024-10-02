@@ -1,5 +1,5 @@
 #competences h2 {
-    font-size: 5vw;
+    font-size: 6vw;
     text-align: center;
     margin-top: 3vw;
 }
@@ -41,6 +41,7 @@
 }
 .logo-html img {
     height: 10vw;
+    margin: 0.5vw;
 }
 #mongo {
     margin-left: 4vw;

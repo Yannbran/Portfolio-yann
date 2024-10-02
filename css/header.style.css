@@ -10,16 +10,9 @@
     z-index: 1000;
     top: 0;
 }
-
-#theme_button {
-    background-color: black;
-    margin-left: 1vw;
-    border: none;
-}
-#theme_icon{
-    color: white;
-    font-size: 2vw;
-    
+.header img {
+    width: 4vw;
+    margin-left: 2vw;
 }
 .navbar {
     display: flex;
