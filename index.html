@@ -71,10 +71,10 @@
                 </div>
         </section>
         <section id="presentation">
-           
                 <h2>À propos de moi</h2>
                 <div>
-                    <p>Je m’appelle Yann,  je suis développeur web fullstack spécialisé en HTML5, CSS3, JavaScript, React, et Node.js. 
+                    <p>Je m’appelle Yann,  je suis développeur web fullstack spécialisé en HTML5, CSS3, JavaScript, React et Node.js. 
+                        <br>
                         <br>Bien que je sois encore en début de carrière, j’ai déjà acquis une solide expertise dans la création de sites web et d’applications dynamiques.
                         <br>
                         <br>Mon parcours m’a permis de maîtriser les technologies front-end et back-end, me permettant de concevoir des interfaces utilisateur intuitives et des systèmes backend robustes. 
@@ -85,27 +85,50 @@
                 
             </section>
         <section id="competences">
+            <div class="section-bar"></div>
             <h2>Mes compétences</h2>
             <div class="container-comp">
                 <div class="card">
                     <h3>Intégration web avec HTML5 - CSS3 </h3>
+                    <div class="logo-html">
+                        <div>
+                            <img src="/images/html5_icon.png" alt="logo html5">
+                        </div>
+                        <div>
+                            <img src="/images/css3_icon.png" alt="logo css3">
+                        </div>
+                    </div>
                     <p>Intégrer du contenu conformémént à une maquette</p>
                     <p>Implémenter une interface responsive</p>
                 </div>
                 <div class="card">
                     <h3>Développement web avec JavaScript</h3>
+                    <div class="logo-html">
+                        <img src="/images/javascript-39420.webp" alt="logo javascript">
+                    </div>
                     <p>Récupérer les données utilisateurs depuis un formulaire</p>
                     <p>Manipuler les éléments du DOM</p>
-                <p>Gérer les évènements utilisateurs</p>
+                    <p>Gérer les évènements utilisateurs</p>
                 </div>
                 <div class="card">
                     <h3>Développement back-end avec Node.js</h3>
+                    <div class="logo-html">
+                        <div>
+                            <img src="/images/node.js-logo.webp" alt="logo node.js">
+                        </div>
+                        <div>
+                            <img src="/images/logo_mongodb_programming_icon.png" alt="logo mongodb" id="mongo">
+                        </div>
+                    </div>
                     <p>Implémenter un modèle logique de données</p>
                     <p>Mettre en oeuvre des opérations CRUD de manière sécurisée</p>
                     <p>Stocker des données de manière sécurisée</p>
                 </div>
                 <div class="card">
                     <h3>React</h3>
+                    <div class="logo-html">
+                        <img src="/images/react_react native_icon.webp" alt="logo react">
+                    </div>
                     <p>Configurer la navigation entre les pages d'une application avec React Router</p>
                     <p>Initialiser une application avec Create React App</p>
                     <p>Développer l'interface d'un site web grâce à des composants React</p>
@@ -135,11 +158,13 @@
         </section>
         <section id="realisations">
             <h2>Réalisations</h2>
-            <p>  </p>
+            
         </section>
         <section id="contact">
+            <div class="section-bar"></div>
+            <h3>Démarrons un projet ensemble</h3>
+            <p>N'hésitez pas à me contacter</p>
             <div class="contact-form">
-                <h2>Contactez-moi</h2>
                 <form id="contactForm" action="/submit_form" method="post">
                     <div id="nom">
                         <label for="name">Nom</label>
@@ -153,7 +178,13 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="20" required></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+                    <div class="button-container">
+                        <button type="submit">
+                            Envoyer
+                            <img src="/images/email_message_letter_mail_send_icon.webp" alt="logo email">
+                        </button>
+                    </div>
+                       
                 </form>
             </div>
             <p>  </p>

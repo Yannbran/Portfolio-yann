@@ -2,17 +2,19 @@
     font-size: 4vw;
     text-align: center;
     margin-top: 1vw;
-}
-.contact-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
 }
-.contact-form h2 {
-    margin-bottom: 2vw;
-    color: #000;
+.contact-form {
+    background-color: #d1d1d1;
+    padding: 20px;
+    border-radius: 3vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 2vw auto;
+    
+}
+#contact h3 {
+    margin-top: 3vw;
 }
 .contact-form label {
     display: block;
@@ -21,11 +23,11 @@
 }
 .contact-form input,
 .contact-form textarea {
-    width: 40%;
+    width: 60%;
     height: 3vw;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #000000;
+    border: none;
     border-radius: 4px;
     font-size: 2vw;
     font-family: "Voltaire", sans-serif;
@@ -34,10 +36,11 @@
     height: 10vw;
 }
 .contact-form button {
+    
     background-color: #000;
     color: #fff;
     width: 42%;
-    margin-top: 2vw;
+    margin-top: 2vw auto;
     font-size: 3vw;
     padding: 10px 15px;
     border: none;
@@ -45,5 +48,26 @@
     cursor: pointer;
 }
 .contact-form button:hover {
-    background-color: #333;
+    background-color: #9c9c9c;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button img {
+    width: 3vw;
+    margin-left: 1vw;
+    margin-bottom: 0.3vw;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 50%;
+    margin: 3vw auto;
+}
+label {
+    font-family: "Voltaire", sans-serif;  
 }
