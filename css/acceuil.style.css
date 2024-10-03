@@ -3,14 +3,20 @@
     object-fit: cover;
 }
 #yann {
+    display: flex;
     position: absolute;
+    align-items: center;
     width: auto;
     top: 35%;
-    left: 20%;
+    left: 15%;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
+    border-radius: 5vw;
     padding: 1.5vw;
+}
+#yann img {
+    width: 8vw;
+    margin-right: 4vw;
 }
 #yann h2 {
     font-family: "Great Vibes", cursive;
@@ -22,13 +28,13 @@
     position: absolute;
     width: auto;
     top: 70%;
-    left: 10%;
+    left: 5%;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 50px;
+    border-radius: 5vw;
     padding: 3vw;
 }
 #developer p {
-    font-size: 7vw;
+    font-size: 9vw;
     margin: 0;
 }
