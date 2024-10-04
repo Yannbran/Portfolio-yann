@@ -3,13 +3,12 @@
     font-family: "Bebas Neue", sans-serif;
 }
 main {
-
-   justify-content: center;
+    justify-content: center;
 }
 .section-bar {
     margin: 0 auto;
     width: 70%;
     height: 0.5vw;
-    background-color: black;
+    background-color: blueviolet;
     border-radius: 3vw;
 }
