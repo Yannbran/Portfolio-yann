@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/css/footer.style.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="scritps.js" defer></script>
 
 </head>
@@ -35,14 +36,14 @@
 <body>
     <header>
         <div class="header">
-                <nav id="social-link">
-                    <a href="https://github.com/Yannbran" target="_blank" rel="noopener">
-                        <img src="/images/code repository_github_repository_resource_icon.webp" alt="logo github">
-                    </a>
-                    <a href="mailto:yann06.dev@gmail.com" target="_blank" rel="noopener">
-                        <img src="/images/gmail_icon_white.webp" alt="logo gmail">
-                    </a>
-                </nav>
+            <nav id="social-link">
+                <a href="https://github.com/Yannbran" target="_blank" rel="noopener">
+                    <img src="/images/code repository_github_repository_resource_icon.webp" alt="logo github">
+                </a>
+                <a href="mailto:yann06.dev@gmail.com" target="_blank" rel="noopener">
+                    <img src="/images/gmail_icon_white.webp" alt="logo gmail">
+                </a>
+            </nav>
             <div class="navbar">
                 <nav>
                     <a class="navbar_link" href="#acceuil">Acceuil</a>
@@ -204,10 +205,15 @@
         </section>
         <div class="section-bar"></div>
         <section id="realisations">
+            
             <h2>Réalisations</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-title="Booki" data-description="Description du projet: "
+                        data-description-text="Dans ce projet, j'ai dû créer la page d’accueil d’une agence de voyage en utilisant HTML5 et CSS3. L’objectif principal était d’intégrer une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
+                        data-problems="Problématiques rencontrées et solutions: " data-problems-text="Pour assurer une adaptation responsive, j'ai utilisé des media queries afin d'ajuster le design en fonction des différentes tailles d'écran. En ce qui concerne l'intégration précise des maquettes, il m'a été crucial d'analyser attentivement les maquettes Figma et de faire un découpage, pour respecter le design. Enfin, pour la gestion des images et des ressources, il a été important d'optimiser les images pour le webet d'utiliser des formats adaptés pour différentes résolutions d'écran."
+                        data-competences="Compétences développées " data-competences-text="Les compétences développées incluent la création de designs responsives, permettant de concevoir des interfaces qui s’adaptent à tous les appareils. L’intégration de maquettes est également essentielle, car elle développe la capacité à traduire des maquettes en code HTML et CSS précis. De plus, l’utilisation de Git et GitHub pour versionner et gérer le projet est cruciale pour un bon versionnement de projet. Enfin, l’installation et la configuration d’un environnement de développement front-end efficace sont indispensables pour optimiser le processus de développement." data-link="Lien: "
+                        data-link-text="https://yannbran.github.io/booki-starter-code-master/" data-image="/images/booki_screen.webp">
                         <h3>Booki</h3>
                         <img src="/images/booki_screen.webp" alt="photo du site booki">
                     </div>
@@ -217,10 +223,28 @@
                     </div>
                 </div>
             </div>
+            <div class="chevron">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
             <div id="modal" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="modal-text"></p>
+                    <img src="/images/close_circle_line_icon.webp" alt="icon fermer" class="close">
+                    <h3 id="modal-title"></h3>
+                    <h4 id="modal-description"></h4>
+                    <p id="modal-description-text"></p>
+                    <h4 id="modal-problems"></h4>
+                    <p id="modal-problems-text"></p>
+                    <h4 id="modal-competences"></h4>
+                    <p id="modal-competences-text"></p>
+                    <h4 id="modal-link"></h4>
+                    <p id="modal-link-text"></p>
+                    <a id="modal-project-link" class="project-link" href="" target="_blank">Lien vers le projet</a>
+                    <div class="image-mod-container">
+                        <img id="modal-image" src="" alt="Image du projet">        
+                    </div>
+                    
                 </div>
             </div>
         </section>

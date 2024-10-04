@@ -25,10 +25,7 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+   
     loop: true,
     autoplay: {
         delay: 3000,
@@ -39,11 +36,56 @@ var swiper = new Swiper('.swiper-container', {
 // Gestion des modales
 document.querySelectorAll('.swiper-slide').forEach(slide => {
     slide.addEventListener('click', function() {
-        var content = this.getAttribute('data-content');
+        var title = this.getAttribute('data-title');
+        var description = this.getAttribute('data-description');
+        var descriptionText = this.getAttribute('data-description-text');
+        var problems = this.getAttribute('data-problems');
+        var problemsText = this.getAttribute('data-problems-text');
+        var competences = this.getAttribute('data-competences');
+        var competencesText = this.getAttribute('data-competences-text');
+        var link = this.getAttribute('data-link');
+        var linkText = this.getAttribute('data-link-text');
+        var image = this.getAttribute('data-image');
+        
+        console.log('Title:', title);
+        console.log('Description:', description);
+        console.log('DescriptionText:', descriptionText);
+        console.log('Problems:',problems);
+        console.log('ProblemsText:', problemsText);
+        console.log('Competences:', competences);
+        console.log('CompetencesText:', competencesText);
+        console.log('Link:', link);
+        console.log('LinkText:', linkText);
+        console.log('Image:', image);
+        
         var modal = document.getElementById('modal');
-        var modalText = document.getElementById('modal-text');
-        modalText.textContent = content;
-        modal.style.display = "block";
+        var modalTitle = document.getElementById('modal-title');
+        var modalDescription = document.getElementById('modal-description');
+        var modalDescriptionText = document.getElementById('modal-description-text');
+        var modalProblems = document.getElementById('modal-problems');
+        var modalProblemsText = document.getElementById('modal-problems-text');
+        var modalCompetences = document.getElementById('modal-competences');
+        var modalCompetencesText = document.getElementById('modal-competences-text');
+        var modalLink = document.getElementById('modal-link');
+        var modalProjectLink = document.getElementById('modal-project-link');
+        var modalImage = document.getElementById('modal-image');
+        
+        if (modalTitle && modalDescription && modalDescriptionText && modalProblems && modalProblemsText
+             &&modalCompetences &&modalCompetencesText &&modalLink &&modalProjectLink && modalImage ) {
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalDescriptionText.textContent = descriptionText;
+            modalProblems.textContent = problems;
+            modalProblemsText.textContent = problemsText;
+            modalCompetences.textContent = competences;
+            modalCompetencesText.textContent = competencesText;
+            modalProjectLink.textContent = "Lien vers le projet";
+            modalProjectLink.href = linkText;
+            modalImage.src = image;
+            modal.style.display = "block";
+        } else {
+            console.error('Un ou plusieurs éléments de la modale sont introuvables.');
+        }
     });
 });
 
@@ -58,15 +100,16 @@ window.addEventListener('click', function(event) {
     }
 });
 
-document.querySelectorAll('.close').forEach(closeBtn => {
-    closeBtn.addEventListener('click', function() {
-        var modal = this.closest('.modal');
-        modal.style.display = "none";
+// Ajouter les liens cliquables
+document.addEventListener('DOMContentLoaded', function() {
+    var slides = document.querySelectorAll('.swiper-slide');
+    slides.forEach(function(slide) {
+        var linkElement = slide.querySelector('#project-link');
+        var linkText = slide.getAttribute('data-link-text');
+        var linkURL = slide.getAttribute('data-link-text');
+        if (linkElement && linkText && linkURL) {
+            linkElement.textContent = linkText;
+            linkElement.href = linkURL;
+        }
     });
-});
-
-window.addEventListener('click', function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.style.display = "none";
-    }
 });
