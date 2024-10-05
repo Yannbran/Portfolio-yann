@@ -31,6 +31,7 @@ var swiper = new Swiper('.swiper-container', {
         delay: 3000,
         disableOnInteraction: false,
     },
+    speed: 800
 });
 
 // Gestion des modales
@@ -79,7 +80,7 @@ document.querySelectorAll('.swiper-slide').forEach(slide => {
             modalProblemsText.textContent = problemsText;
             modalCompetences.textContent = competences;
             modalCompetencesText.textContent = competencesText;
-            modalProjectLink.textContent = "Lien vers le projet";
+            modalProjectLink.textContent = "Lien du projet";
             modalProjectLink.href = linkText;
             modalImage.src = image;
             modal.style.display = "block";
