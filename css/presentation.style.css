@@ -21,3 +21,10 @@
     font-family: "Voltaire", sans-serif;
     margin: 3vw;
 }
+
+@media (max-width: 768px) {
+    #presentation div {
+        font-size: 3.5vw;
+        margin: 0 7vw;
+    }
+}

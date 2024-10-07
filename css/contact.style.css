@@ -51,6 +51,7 @@
     border: none;
     border-radius: 2vw;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 .contact-form button:hover {
     background-color: rgb(174, 174, 174);

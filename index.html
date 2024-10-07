@@ -10,12 +10,14 @@
     <meta name="Keywords" content="portfolio, Développeur web, REACT, SIO, Développeur REACT, Mobile.">
     <meta name="Robots" content="all">
 
-    <title>Portfolio</title>
+    <title>Portfolio Yann Branjonneau</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Voltaire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -30,6 +32,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="scritps.js" defer></script>
+    <script src="modal-scripts.js" defer></script>
 
 </head>
 
@@ -37,20 +40,21 @@
     <header>
         <div class="header">
             <nav id="social-link">
-                <a href="https://github.com/Yannbran" target="_blank" rel="noopener">
+                <a href="https://github.com/Yannbran/YannBran/blob/main/README%20(1).md" target="_blank" rel="noopener">
                     <img src="/images/code repository_github_repository_resource_icon.webp" alt="logo github">
                 </a>
                 <a href="mailto:yann06.dev@gmail.com" target="_blank" rel="noopener">
                     <img src="/images/gmail_icon_white.webp" alt="logo gmail">
                 </a>
             </nav>
+            <div class="burger-menu" onclick="toggleMenu()"></div>
             <div class="navbar">
                 <nav>
-                    <a class="navbar_link" href="#acceuil">Acceuil</a>
+                    <a class="nav-link" href="#acceuil">Acceuil</a>
                 </nav>
 
                 <nav>
-                    <a class="nav_link" href="#presentation">Présentation</a>
+                    <a class="nav-link" href="#presentation">Présentation</a>
                 </nav>
 
                 <nav>
@@ -210,40 +214,41 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-title="Booki" data-description="Description du projet: "
-                        data-description-text="Dans ce projet, j'ai dû créer la page d’accueil d’une agence de voyage en utilisant HTML5 et CSS3. L’objectif principal était d’intégrer une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
-                        data-problems="Problématiques rencontrées et solutions: " data-problems-text="Pour assurer une adaptation responsive, j'ai utilisé des media queries afin d'ajuster le design en fonction des différentes tailles d'écran. En ce qui concerne l'intégration précise des maquettes, il m'a été crucial d'analyser attentivement les maquettes Figma et de faire un découpage, pour respecter le design. Enfin, pour la gestion des images et des ressources, il a été important d'optimiser les images pour le webet d'utiliser des formats adaptés pour différentes résolutions d'écran."
-                        data-competences="Compétences développées " data-competences-text="Les compétences développées incluent la création de designs responsives, permettant de concevoir des interfaces qui s’adaptent à tous les appareils. L’intégration de maquettes est également essentielle, car elle développe la capacité à traduire des maquettes en code HTML et CSS précis. De plus, l’utilisation de Git et GitHub pour versionner et gérer le projet est cruciale pour un bon versionnement de projet. Enfin, l’installation et la configuration d’un environnement de développement front-end efficace sont indispensables pour optimiser le processus de développement." data-link="Lien: "
+                        data-description-text="Dans ce projet, j'ai dû créer la page d’accueil d’une agence de voyage en utilisant HTML5 et CSS3.<br> L’objectif principal était d’intégrer une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
+                        data-problems="Problématiques rencontrées et solutions: " data-problems-text="Pour assurer une adaptation responsive, j'ai utilisé des media queries afin d'ajuster le design en fonction des différentes tailles d'écran.<br> En ce qui concerne l'intégration précise des maquettes, il m'a été crucial d'analyser attentivement les maquettes Figma et de faire un découpage, pour respecter le design.<br> Enfin, pour la gestion des images et des ressources, il a été important d'optimiser les images pour le web et d'utiliser des formats adaptés pour différentes résolutions d'écran."
+                        data-competences="Compétences développées " data-competences-text="- Intégrer du contenu conformément à une maquette avec HTML et CSS.<br> - Implémenter une interface responsive avec HTML et CSS." data-link="Lien: "
                         data-link-text="https://yannbran.github.io/booki-starter-code-master/" data-image="/images/booki_screen.webp">
                         <h3>Booki</h3>
                         <img src="/images/booki_screen.webp" alt="photo du site booki">
                     </div>
-                    <div class="swiper-slide" data-title="Sophie Bluel, architecte d'intérieur" data-description="Description du projet: "
-                        data-description-text="Dans ce projet, j'ai dû créer la page d’accueil d’une agence de voyage en utilisant HTML5 et CSS3. L’objectif principal était d’intégrer une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
-                        data-problems="Problématiques rencontrées et solutions: " data-problems-text="Pour assurer une adaptation responsive, j'ai utilisé des media queries afin d'ajuster le design en fonction des différentes tailles d'écran. En ce qui concerne l'intégration précise des maquettes, il m'a été crucial d'analyser attentivement les maquettes Figma et de faire un découpage, pour respecter le design. Enfin, pour la gestion des images et des ressources, il a été important d'optimiser les images pour le webet d'utiliser des formats adaptés pour différentes résolutions d'écran."
-                        data-competences="Compétences développées " data-competences-text="Les compétences développées incluent la création de designs responsives, permettant de concevoir des interfaces qui s’adaptent à tous les appareils. L’intégration de maquettes est également essentielle, car elle développe la capacité à traduire des maquettes en code HTML et CSS précis. De plus, l’utilisation de Git et GitHub pour versionner et gérer le projet est cruciale pour un bon versionnement de projet. Enfin, l’installation et la configuration d’un environnement de développement front-end efficace sont indispensables pour optimiser le processus de développement." data-link="Lien: "
+                    <div class="swiper-slide" data-title="Sophie Bluel" data-description="Description du projet"
+                        data-description-text="J’ai créé une page web dynamique pour une architecte d’intérieur en utilisant JavaScript et une API.<br>Le but était de développer la présentation des travaux, gérer les interactions utilisateurs, et permettre l’upload de nouveaux médias via une interface administrateur.<br> Ce projet m’a permis de renforcer mes compétences en JavaScript et en communication avec des APIs."
+                        data-problems="Problématiques rencontrées et solutions" data-problems-text="Tout d’abord, récupérer les données utilisateurs via des formulaires a nécessité une validation pour garantir l’intégrité des informations. J’ai utilisé des écouteurs d’événements pour capturer les données saisies et les transmettre de manière sécurisée.<br> Ensuite, manipuler les éléments du DOM avec JavaScript a posé des défis en termes de performance et de réactivité. J’ai optimisé le code en utilisant des sélecteurs efficaces et en minimisant les manipulations directes du DOM.<br> Enfin, gérer les événements utilisateurs a demandé une gestion précise des différentes interactions possibles. J’ai implémenté des gestionnaires d’événements pour assurer une expérience utilisateur fluide et réactive, en anticipant et en traitant les erreurs potentielles."
+                        data-competences="Compétences développées" data-competences-text="- Récupérer les données utilisateurs dans le JavaScript via des formulaires.<br> - Manipuler les éléments du DOM avec JavaScript.<br> - Gérer les événements utilisateurs avec JavaScript." data-link="Lien: "
                         data-link-text="https://github.com/Yannbran/Portfolio-architecte-sophie-bluel" data-image="/images/screen_sophie_bluel.webp">
                         <h3>Sophie Bluel</h3>
                         <img src="/images/screen_sophie_bluel.webp" alt="photo du site d'architecte">
                     </div>
-                    <div class="swiper-slide" data-title="Nina Carducci" data-description="Description du projet: " 
-                    data-description-text="Dans ce projet, j’ai créé une page web dynamique pour une architecte d’intérieur en utilisant JavaScript et en communiquant avec une API. J’ai travaillé sur la partie Front-End, en développant la page de présentation des travaux de l’architecte à partir du HTML fourni, tout en gérant les événements utilisateurs et en manipulant le DOM. J’ai également créé une page de connexion pour l’administrateur et une modale pour uploader de nouveaux médias. Ce projet m’a permis de mettre en pratique mes compétences en JavaScript, d’apprendre à communiquer avec une API, et d’utiliser des outils comme Figma, Visual Studio Code et GitHub. Ces compétences ont été cruciales pour devenir un développeur Front-End complet et recherché, capable de créer des sites web interactifs et fonctionnels."
-                    data-problems="Problématiques rencontrées et solutions: " data-problems-text="" data-competences="Compétences développées " data-competences-text="" 
+                    <div class="swiper-slide" data-title="Nina Carducci" data-description="Description du projet" 
+                    data-description-text="Dans ce projet, j’ai travaillé en tant que développeur freelance pour optimiser le référencement d’un site web en améliorant sa performance et son accessibilité.<br> J’ai commencé par identifier les problèmes de chargement et de référencement en utilisant des outils comme Lighthouse et Wave.<br> Ensuite, j’ai proposé et appliqué des recommandations pour améliorer la vitesse de chargement, la structure du code et le référencement. Mon objectif était d’améliorer les performances et l’accessibilité du site pour un meilleur positionnement sur les moteurs de recherche.<br> Enfin, j’ai créé un rapport illustrant les résultats avant et après les modifications, incluant des captures d’écran des audits et des explications sur les changements apportés."
+                    data-problems="Problématiques rencontrées et solutions" data-problems-text="Les principales problématiques rencontrées incluaient des temps de chargement lents et une structure de code inefficace, ce qui affectait négativement le référencement et l’accessibilité du site.<br> Pour résoudre ces problèmes, j’ai utilisé des outils d’audit pour identifier les points faibles et proposé des solutions telles que l’optimisation des images, la minification des fichiers CSS et JavaScript, et l’amélioration de la structure HTML.<br> J’ai également mis en place des pratiques de développement accessibles pour garantir que le site soit utilisable par tous les utilisateurs, y compris ceux ayant des handicaps.<br> Ces actions ont permis d’améliorer significativement les performances du site et son accessibilité, contribuant ainsi à une meilleure expérience utilisateur et à un meilleur référencement." 
+                    data-competences="Compétences développées" data-competences-text="- Optimiser les performances d’un site web.<br> - Débugger un site web grâce aux Chrome DevTools.<br> - Rédiger un cahier de recette pour tester un site." 
                     data-link-text="https://github.com/Yannbran/Nina-Carducci-Dev.git" data-image="/images/nina-screen.webp">
                     <h3>Nina Carducci</h3>
                         <img src="/images/nina-screen.webp" alt="photo du site de Nina">
                     </div>
-                    <div class="swiper-slide" data-title="Kasa" data-description="Description du projet: "
-                        data-description-text="Dans ce projet, j'ai dû créer la page d’accueil d’une agence de voyage en utilisant HTML5 et CSS3. L’objectif principal était d’intégrer une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
-                        data-problems="Problématiques rencontrées et solutions: " data-problems-text="Pour assurer une adaptation responsive, j'ai utilisé des media queries afin d'ajuster le design en fonction des différentes tailles d'écran. En ce qui concerne l'intégration précise des maquettes, il m'a été crucial d'analyser attentivement les maquettes Figma et de faire un découpage, pour respecter le design. Enfin, pour la gestion des images et des ressources, il a été important d'optimiser les images pour le webet d'utiliser des formats adaptés pour différentes résolutions d'écran."
-                        data-competences="Compétences développées " data-competences-text="Les compétences développées incluent la création de designs responsives, permettant de concevoir des interfaces qui s’adaptent à tous les appareils. L’intégration de maquettes est également essentielle, car elle développe la capacité à traduire des maquettes en code HTML et CSS précis. De plus, l’utilisation de Git et GitHub pour versionner et gérer le projet est cruciale pour un bon versionnement de projet. Enfin, l’installation et la configuration d’un environnement de développement front-end efficace sont indispensables pour optimiser le processus de développement." data-link="Lien: "
+                    <div class="swiper-slide" data-title="Kasa" data-description="Description du projet"
+                        data-description-text="Dans ce projet, j’ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.<br> J’ai travaillé sur la logique de présentation des données et les composants React, configuré la navigation entre les différentes pages avec React Router, et utilisé des données simulées extraites d’un fichier JSON.<br> Le projet s’est concentré exclusivement sur le développement front-end, en se basant sur les maquettes fournies.<br> J’ai débuté avec Create React App pour simplifier la configuration initiale et utilisé Node.js pour exécuter du code JavaScript en dehors du navigateur."
+                        data-problems="Problématiques rencontrées et solutions" data-problems-text="Les principales problématiques rencontrées incluaient la gestion efficace du routage et l’optimisation des performances de l’application.<br> Pour le routage, j’ai utilisé React Router pour configurer une navigation fluide entre les pages, ce qui a nécessité une compréhension approfondie des routes dynamiques et des composants de navigation.<br> Concernant les performances, j’ai optimisé le rendu des composants en utilisant des techniques comme le lazy loading et la mémorisation des composants.<br> L’utilisation de SASS a également permis de gérer le CSS de manière plus efficace, et l’implémentation d’animations CSS a amélioré l’expérience utilisateur."
+                        data-competences="Compétences développées" data-competences-text="- Configurer la navigation entre les pages de l'application avec React Router.<br> - Initialiser une application avec Create React App.<br> - Développer des éléments de l'interface d'un site web grâce à des composants React" data-link="Lien: "
                         data-link-text="https://github.com/Yannbran/kasa" data-image="/images/Kasa-screen.webp">
                         <h3>Kasa</h3>
                         <img src="/images/Kasa-screen.webp" alt="photo du site Kasa">
                     </div>
-                    <div class="swiper-slide" data-title="Mon vieux grimoire" data-description="Description du projet: "
-                    data-description-text="Dans ce projet, j'ai dû créer la page d’accueil d’une agence de voyage en utilisant HTML5 et CSS3. L’objectif principal était d’intégrer une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
-                    data-problems="Problématiques rencontrées et solutions: " data-problems-text="Pour assurer une adaptation responsive, j'ai utilisé des media queries afin d'ajuster le design en fonction des différentes tailles d'écran. En ce qui concerne l'intégration précise des maquettes, il m'a été crucial d'analyser attentivement les maquettes Figma et de faire un découpage, pour respecter le design. Enfin, pour la gestion des images et des ressources, il a été important d'optimiser les images pour le webet d'utiliser des formats adaptés pour différentes résolutions d'écran."
-                    data-competences="Compétences développées " data-competences-text="Les compétences développées incluent la création de designs responsives, permettant de concevoir des interfaces qui s’adaptent à tous les appareils. L’intégration de maquettes est également essentielle, car elle développe la capacité à traduire des maquettes en code HTML et CSS précis. De plus, l’utilisation de Git et GitHub pour versionner et gérer le projet est cruciale pour un bon versionnement de projet. Enfin, l’installation et la configuration d’un environnement de développement front-end efficace sont indispensables pour optimiser le processus de développement." data-link="Lien: "
+                    <div class="swiper-slide" data-title="Mon vieux grimoire" data-description="Description du projet"
+                    data-description-text="Dans ce projet, j’ai développé le back-end d’un site de notation de livres en utilisant Express et MongoDB.<br> Mon rôle consistait à créer un serveur, établir la communication avec la base de données, et implémenter des opérations CRUD pour gérer les livres et les notations.<br> J’ai également mis en place un système d’authentification sécurisé pour les utilisateurs, géré le téléchargement et l’optimisation des images, et ajouté des fonctionnalités pour noter les livres et calculer la note moyenne.<br> Le projet a été structuré selon une architecture MVC et a respecté les bonnes pratiques du Green Code pour réduire l’empreinte écologique."
+                    data-problems="Problématiques rencontrées et solutions" data-problems-text="Les principales problématiques rencontrées incluaient la sécurisation des données et la gestion efficace des opérations CRUD.<br> Pour la sécurité des données, j’ai implémenté des mesures telles que le chiffrement des mots de passe et l’utilisation de tokens JWT pour l’authentification.<br> La gestion des opérations CRUD a nécessité une attention particulière à la validation des données et à la gestion des erreurs.<br> J’ai utilisé Mongoose pour modéliser les données MongoDB, ce qui a simplifié les interactions avec la base de données.<br> La gestion du téléchargement et de l’optimisation des images a été résolue en utilisant des bibliothèques comme Multer et Sharp.<br> Ces solutions ont permis de surmonter les défis et de développer une application back-end robuste et sécurisée."
+                    data-competences="Compétences développées" data-competences-text="- Implémenter un modèle logique de données conformément à la réglementation.<br> - Mettre en œuvre des opérations CRUD de manière sécurisée.<br> - Stocker des données de manière sécurisée." data-link="Lien: "
                     data-link-text="https://github.com/Yannbran/backend_mon_vieux_grimoire" data-image="/images/Mon-vieux-grimoire.webp">
                     <h3>Mon vieux grimoire</h3>
                     <img src="/images/Mon-vieux-grimoire.webp" alt="photo du site mon vieux grimoire">
@@ -256,9 +261,14 @@
             </div>
             
             <div id="modal" class="modal">
+                <img src="/images/close_cross_delete_icon.webp" alt="icon fermer" class="close">
                 <div class="modal-content">
-                    <img src="/images/close_circle_line_icon.webp" alt="icon fermer" class="close">
-                    <h3 id="modal-title"></h3>
+                    
+                    <div class="modal-header">
+                        <button id="prev-project" class="nav-button">&#10094;</button> <!-- Chevron gauche -->
+                        <h3 id="modal-title"></h3>
+                        <button id="next-project" class="nav-button">&#10095;</button> <!-- Chevron droit -->
+                    </div>
                     <h4 id="modal-description"></h4>
                     <p id="modal-description-text"></p>
                     <h4 id="modal-problems"></h4>
@@ -266,7 +276,6 @@
                     <h4 id="modal-competences"></h4>
                     <p id="modal-competences-text"></p>
                     <h4 id="modal-link"></h4>
-                    <p id="modal-link-text"></p>
                     <div id="realisations-links">
                         <img src="/images/click-2384.webp" alt="icon clic">
                         <a id="modal-project-link" class="project-link" href="#" target="_blank">Lien du projet</a>

@@ -1,3 +1,20 @@
+function toggleMenu() {
+    const navbar = document.querySelector('.header .navbar');
+    const burgerMenu = document.querySelector('.burger-menu');
+    navbar.classList.toggle('active');
+    burgerMenu.classList.toggle('cross'); // Change l'icône burger en croix
+}
+
+// Fermer le menu lorsque l'un des liens est cliqué
+document.querySelectorAll('.header .navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbar = document.querySelector('.header .navbar');
+        const burgerMenu = document.querySelector('.burger-menu');
+        navbar.classList.remove('active');
+        burgerMenu.classList.remove('cross'); // Revenir à l'icône burger
+    });
+});
+
 
 (function() {
     emailjs.init("_-cslyDMgul-VWq-a"); // Remplace "_-cslyDMgul-VWq-a" par ta clé publique EmailJS
@@ -75,11 +92,11 @@ document.querySelectorAll('.swiper-slide').forEach(slide => {
              &&modalCompetences &&modalCompetencesText &&modalLink &&modalProjectLink && modalImage ) {
             modalTitle.textContent = title;
             modalDescription.textContent = description;
-            modalDescriptionText.textContent = descriptionText;
+            modalDescriptionText.innerHTML = descriptionText;
             modalProblems.textContent = problems;
-            modalProblemsText.textContent = problemsText;
+            modalProblemsText.innerHTML = problemsText;
             modalCompetences.textContent = competences;
-            modalCompetencesText.textContent = competencesText;
+            modalCompetencesText.innerHTML = competencesText;
             modalProjectLink.textContent = "Lien du projet";
             modalProjectLink.href = linkText;
             modalImage.src = image;

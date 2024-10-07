@@ -47,3 +47,21 @@
     margin-left: 2vw;
 
 }
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 4vw;
+        padding: 4vw;
+        border-radius: 7vw;
+    }
+    .card h3 {
+        font-size: 4vw;
+    }
+    .logo-html img {
+        height: 15vw;
+    }
+    .card p {
+        font-size: 3vw;
+    }
+}
