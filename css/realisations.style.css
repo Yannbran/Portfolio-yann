@@ -200,14 +200,7 @@
     margin-top: 13vw;
   }
   .chevron {
-    top: 562vw;
-    margin: 0 5vw;
-  }
-  .swiper-button-next {
-    left: 75vw;
-  }
-  .swiper-button-prev {
-    left: 12vw;
+    display: none;
   }
   #realisations h2 {
     margin-bottom: 5vw;
@@ -257,39 +250,5 @@
   .project-link {
     font-size: 8vw;
     margin-top: 3vw;
-  }
-}
-@media (max-width: 592px) {
-  .chevron {
-    top: 564vw;
-  }
-}
-@media (max-width: 526px) {
-  .chevron {
-    top: 566vw;
-  }
-}
-@media (max-width: 426px) {
-  .swiper-button-next {
-    left: 75vw;
-  }
-  .swiper-button-prev {
-    left: 8vw;
-  }
-  .chevron {
-    top: 567vw;
-  }
-}
-@media (max-width: 376px) {
-  .chevron {
-    top: 572vw;
-  }
-  .swiper-button-prev {
-    left: 7vw;
-  }
-  @media (max-width: 321px) {
-    .chevron {
-      top: 573vw;
-    }
   }
 }
