@@ -9,7 +9,7 @@ footer {
   margin-top: 7vw;
 }
 footer p {
-  font-size: 1.5vw;
+  font-size: 3vw;
   margin-right: 2vw;
 }
 @media (max-width: 768px) {
@@ -17,6 +17,6 @@ footer p {
     height: 14vw;
   }
   footer p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }

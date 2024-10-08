@@ -15,7 +15,7 @@
   border-radius: 3vw;
   width: 70%;
   height: 45vw;
-  margin: 0 auto 5vw auto;
+  margin: 0 auto 9vw auto;
   overflow: hidden;
 }
 
@@ -203,7 +203,8 @@
     display: none;
   }
   #realisations h2 {
-    margin-bottom: 5vw;
+    font-size: 9vw;
+    margin-bottom: 3vw;
   }
   .swiper-container {
     width: 85%;

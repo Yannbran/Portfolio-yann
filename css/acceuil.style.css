@@ -37,3 +37,19 @@
   font-weight: 500;
   margin: 0;
 }
+@media (max-width: 768px) {
+  #yann {
+    left: 7vw;
+  }
+  #yann h2 {
+    font-size: 10vw;
+  }
+  #developer {
+    left: 3vw;
+    text-align: center;
+    padding: 1vw;
+  }
+  #developer p {
+    font-size: 10vw;
+  }
+}

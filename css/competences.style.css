@@ -47,6 +47,9 @@
   margin-left: 2vw;
 }
 @media (max-width: 768px) {
+  #competences h2 {
+    font-size: 9vw;
+  }
   .card {
     width: 80%;
     height: auto;
@@ -55,12 +58,12 @@
     border-radius: 7vw;
   }
   .card h3 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .logo-html img {
-    height: 15vw;
+    height: 22vw;
   }
   .card p {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 }
