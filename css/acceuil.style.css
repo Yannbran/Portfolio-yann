@@ -1,89 +1,89 @@
 #acceuil-img {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 2vw;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2vw;
 }
-#yann, #developer {
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 5vw;
-    
+#yann,
+#developer {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5vw;
 }
 #yann {
-    display: flex;
-    top: 35%;
-    left: 15%;
-    padding: 1.5vw;
-    align-items: center;
+  display: flex;
+  top: 35%;
+  left: 15%;
+  padding: 1.5vw;
+  align-items: center;
 }
 #developer {
-    width: auto;
-    top: 70%;
-    left: 6%;
-    padding: 3vw;
+  width: auto;
+  top: 70%;
+  left: 6%;
+  padding: 3vw;
 }
 #developer p {
-    font-size: 9vw;
-    margin: 0;
+  font-size: 9vw;
+  margin: 0;
 }
 #yann img {
-    width: 8vw;
-    margin-right: 4vw;
+  width: 8vw;
+  margin-right: 4vw;
 }
 #yann h2 {
-    font-family: "Pinyon Script", cursive;
-    font-size: 8vw;
-    font-weight: 500;
-    margin: 0;
+  font-family: "Pinyon Script", cursive;
+  font-size: 8vw;
+  font-weight: 500;
+  margin: 0;
 }
 
 @media (max-width: 916px) {
-    #developer {
+  #developer {
     top: 55%;
-    }
-    #yann {
+  }
+  #yann {
     top: 25%;
-    }
+  }
 }
 @media (max-width: 768px) {
-    #developer {
+  #developer {
     top: 50%;
-    }
-    #yann {
+  }
+  #yann {
     top: 25%;
-    }
+  }
 }
 @media (max-width: 649px) {
-    #developer {
+  #developer {
     top: 40%;
-    }
-    #yann {
+  }
+  #yann {
     top: 25%;
-    }
+  }
 }
 @media (max-width: 518px) {
-    #developer {
+  #developer {
     top: 25%;
-    }
-    #yann {
-        top: 15%;
-    }
-    }
+  }
+  #yann {
+    top: 15%;
+  }
+}
 
 @media (max-width: 400px) {
-    #developer {
+  #developer {
     top: 25%;
-    }
-    #yann {
-        top: 15%;
-    }
-    }
-    @media (max-width: 323px) {
-        #developer {
-        top: 20%;
-        }
-        #yann {
-            top: 10%;
-        }
-        }   
+  }
+  #yann {
+    top: 15%;
+  }
+}
+@media (max-width: 323px) {
+  #developer {
+    top: 20%;
+  }
+  #yann {
+    top: 10%;
+  }
+}

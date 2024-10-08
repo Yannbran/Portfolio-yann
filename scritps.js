@@ -2,16 +2,16 @@ function toggleMenu() {
     const navbar = document.querySelector('.header .navbar');
     const burgerMenu = document.querySelector('.burger-menu');
     navbar.classList.toggle('active');
-    burgerMenu.classList.toggle('cross'); // Change l'icône burger en croix
+    burgerMenu.classList.toggle('cross'); 
 }
 
-// Fermer le menu lorsque l'un des liens est cliqué
+
 document.querySelectorAll('.header .navbar a').forEach(link => {
     link.addEventListener('click', () => {
         const navbar = document.querySelector('.header .navbar');
         const burgerMenu = document.querySelector('.burger-menu');
         navbar.classList.remove('active');
-        burgerMenu.classList.remove('cross'); // Revenir à l'icône burger
+        burgerMenu.classList.remove('cross'); 
     });
 });
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         emailjs.sendForm('service_b96xxab', 'template_oj6mjek', this)
             .then(function() {
                 alert('Message envoyé avec succès!');
-                location.reload(); // Recharge la page
+                location.reload(); 
             }, function(error) {
                 alert('Une erreur est survenue. Veuillez réessayer.');
             });
@@ -51,7 +51,6 @@ var swiper = new Swiper('.swiper-container', {
     speed: 800
 });
 
-// Gestion des modales
 document.querySelectorAll('.swiper-slide').forEach(slide => {
     slide.addEventListener('click', function() {
         var title = this.getAttribute('data-title');
@@ -89,7 +88,7 @@ document.querySelectorAll('.swiper-slide').forEach(slide => {
         var modalImage = document.getElementById('modal-image');
         
         if (modalTitle && modalDescription && modalDescriptionText && modalProblems && modalProblemsText
-             &&modalCompetences &&modalCompetencesText &&modalLink &&modalProjectLink && modalImage ) {
+            &&modalCompetences &&modalCompetencesText &&modalLink &&modalProjectLink && modalImage ) {
             modalTitle.textContent = title;
             modalDescription.textContent = description;
             modalDescriptionText.innerHTML = descriptionText;
@@ -118,7 +117,6 @@ window.addEventListener('click', function(event) {
     }
 });
 
-// Ajouter les liens cliquables
 document.addEventListener('DOMContentLoaded', function() {
     var slides = document.querySelectorAll('.swiper-slide');
     slides.forEach(function(slide) {

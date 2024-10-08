@@ -1,67 +1,66 @@
 #competences h2 {
-    font-size: 6vw;
-    text-align: center;
-    margin-top: 3vw;
+  font-size: 6vw;
+  text-align: center;
+  margin-top: 3vw;
 }
 .container-comp {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 2vw 2vw 5vw 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2vw 2vw 5vw 2vw;
 }
 .card {
-    width: 40%;
-    margin-bottom: 2vw;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    padding: 1.5vw;
-    border-radius: 3vw;
+  width: 40%;
+  margin-bottom: 2vw;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1.5vw;
+  border-radius: 3vw;
 }
 .card h3 {
-    font-size: 3vw;
-    font-weight: 80;
-    text-align: center;
-    margin-bottom: 2vw;
+  font-size: 3vw;
+  font-weight: 80;
+  text-align: center;
+  margin-bottom: 2vw;
 }
 .card p {
-    text-align: center;
-    font-family: "Voltaire", sans-serif;
-    font-size: 2vw;
-    margin-top: 1vw;
+  text-align: center;
+  font-family: "Voltaire", sans-serif;
+  font-size: 2vw;
+  margin-top: 1vw;
 }
 .logo-html {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(118, 118, 118);
-    padding: 1vw;
-    margin: 2vw auto;
-    border-radius: 3vw;
-    width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(118, 118, 118);
+  padding: 1vw;
+  margin: 2vw auto;
+  border-radius: 3vw;
+  width: 90%;
 }
 .logo-html img {
-    height: 10vw;
-    margin: 0.5vw;
+  height: 10vw;
+  margin: 0.5vw;
 }
 #mongo {
-    margin-left: 2vw;
-
+  margin-left: 2vw;
 }
 @media (max-width: 768px) {
-    .card {
-        width: 80%;
-        height: auto;
-        margin-bottom: 4vw;
-        padding: 4vw;
-        border-radius: 7vw;
-    }
-    .card h3 {
-        font-size: 4vw;
-    }
-    .logo-html img {
-        height: 15vw;
-    }
-    .card p {
-        font-size: 3vw;
-    }
+  .card {
+    width: 80%;
+    height: auto;
+    margin-bottom: 4vw;
+    padding: 4vw;
+    border-radius: 7vw;
+  }
+  .card h3 {
+    font-size: 4vw;
+  }
+  .logo-html img {
+    height: 15vw;
+  }
+  .card p {
+    font-size: 3vw;
+  }
 }
