@@ -17,7 +17,7 @@ document.querySelectorAll('.header .navbar a').forEach(link => {
 
 
 (function() {
-    emailjs.init("_-cslyDMgul-VWq-a"); // Remplace "_-cslyDMgul-VWq-a" par ta clé publique EmailJS
+    emailjs.init("_-cslyDMgul-VWq-a"); 
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
