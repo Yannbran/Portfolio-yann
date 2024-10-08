@@ -1,6 +1,5 @@
 [build]
-  command = "npm run build"
-  publish = "build"
+  publish = "."
 
 [context.production.environment]
   EMAILJS_USER_ID = "_-cslyDMgul-VWq-a"
