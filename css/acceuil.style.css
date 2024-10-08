@@ -12,14 +12,14 @@
 }
 #yann {
   display: flex;
-  top: 35%;
-  left: 15%;
+  top: 22vw;
+  left: 15vw;
   padding: 1.5vw;
   align-items: center;
 }
 #developer {
   width: auto;
-  top: 70%;
+  top: 45vw;
   left: 6%;
   padding: 3vw;
 }
@@ -36,54 +36,4 @@
   font-size: 8vw;
   font-weight: 500;
   margin: 0;
-}
-
-@media (max-width: 916px) {
-  #developer {
-    top: 55%;
-  }
-  #yann {
-    top: 25%;
-  }
-}
-@media (max-width: 768px) {
-  #developer {
-    top: 50%;
-  }
-  #yann {
-    top: 25%;
-  }
-}
-@media (max-width: 649px) {
-  #developer {
-    top: 40%;
-  }
-  #yann {
-    top: 25%;
-  }
-}
-@media (max-width: 518px) {
-  #developer {
-    top: 25%;
-  }
-  #yann {
-    top: 15%;
-  }
-}
-
-@media (max-width: 400px) {
-  #developer {
-    top: 25%;
-  }
-  #yann {
-    top: 15%;
-  }
-}
-@media (max-width: 323px) {
-  #developer {
-    top: 20%;
-  }
-  #yann {
-    top: 10%;
-  }
 }
