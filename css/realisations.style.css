@@ -45,9 +45,14 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.675);
 }
-.modal img {
-  width: 10vw;
-  margin-top: 10vw;
+.image-mod-container {
+  background-color: black;
+  border-radius: 3vw;
+  padding: 3vw;
+}
+#modal-image {
+  width: 100%;
+  height: auto;
 }
 .modal h4 {
   margin: 3vw auto 1vw auto;
@@ -64,7 +69,10 @@
   font-family: "Voltaire", sans-serif;
   line-height: 2.5vw;
 }
-
+.modal .close {
+  width: 15vw;
+  margin-top: 17vw;
+}
 .modal-content {
   background-color: #fefefe;
   margin: 3vw auto;
@@ -85,16 +93,11 @@
 }
 #modal-image {
   width: 100%;
-  height: auto;
-  margin: 0 auto;
+  margin: 0;
   object-fit: cover;
   border-radius: 3vw;
 }
-.image-mod-container {
-  background-color: black;
-  border-radius: 3vw;
-  padding: 3vw;
-}
+
 .close {
   float: none;
   display: flex;
@@ -157,18 +160,6 @@
   border-radius: 4vw;
 }
 
-.nav-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
 .modal-header {
   display: flex;
   align-items: center;
@@ -176,13 +167,17 @@
 }
 
 .nav-button {
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   cursor: pointer;
   z-index: 10;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 0;
+  width: 3vw;
+  height: 3vw;
 }
 
 #prev-project {
@@ -198,6 +193,7 @@
 @media (max-width: 768px) {
   .modal img {
     margin-top: 13vw;
+    width: 10vw;
   }
   .chevron {
     display: none;
@@ -225,9 +221,6 @@
   .modal-content {
     margin-top: 5vw;
     width: 80%;
-  }
-  .modal img {
-    width: 10vw;
   }
   .modal h4 {
     font-size: 6vw;
