@@ -47,12 +47,13 @@
 }
 .image-mod-container {
   background-color: black;
-  border-radius: 3vw;
+  border-radius: 5vw;
   padding: 3vw;
 }
 #modal-image {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: auto;
 }
 .modal h4 {
   margin: 3vw auto 1vw auto;
@@ -63,7 +64,7 @@
 .modal p {
   background-color: black;
   color: #fefefe;
-  border-radius: 3vw;
+  border-radius: 1vw;
   padding: 1vw 1vw 1vw 3vw;
   font-size: 1.7vw;
   font-family: "Voltaire", sans-serif;
@@ -140,7 +141,7 @@
 .chevron {
   position: absolute;
   z-index: 1;
-  top: 355vw;
+  top: 367vw;
   margin: 0 5vw;
 }
 .swiper-button-next {
@@ -189,7 +190,22 @@
   position: absolute;
   right: 3vw;
 }
-
+@media (max-width: 1024px) {
+  #realisations h2 {
+    font-size: 9vw;
+    margin-bottom: 3vw;
+  }
+  .chevron {
+    top: 487vw;
+  }
+  .swiper-button-next {
+    left: 85vw;
+  }
+  .swiper-button-prev {
+    color: rgb(138, 43, 226);
+    left: 1.5vw;
+  }
+}
 @media (max-width: 768px) {
   .modal img {
     margin-top: 13vw;
@@ -198,10 +214,7 @@
   .chevron {
     display: none;
   }
-  #realisations h2 {
-    font-size: 9vw;
-    margin-bottom: 3vw;
-  }
+
   .swiper-container {
     width: 85%;
     height: 60vw;

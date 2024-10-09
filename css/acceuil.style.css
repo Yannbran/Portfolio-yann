@@ -1,25 +1,25 @@
 #acceuil-img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   margin-bottom: 2vw;
 }
 #yann,
 #developer {
   position: absolute;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.542);
   border-radius: 5vw;
 }
 #yann {
   display: flex;
-  top: 22vw;
+  top: 17vw;
   left: 15vw;
   padding: 1.5vw;
   align-items: center;
 }
 #developer {
   width: auto;
-  top: 45vw;
+  top: 40vw;
   left: 6%;
   padding: 3vw;
 }
