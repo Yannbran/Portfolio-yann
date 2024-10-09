@@ -37,7 +37,11 @@
   font-weight: 500;
   margin: 0;
 }
-
+@media (max-width: 1024px) {
+  #developer h1 {
+    font-size: 8vw;
+  }
+}
 @media (max-width: 768px) {
   #yann {
     left: 10vw;
