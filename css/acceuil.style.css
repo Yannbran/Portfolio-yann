@@ -39,17 +39,19 @@
 }
 @media (max-width: 768px) {
   #yann {
-    left: 7vw;
+    left: 10vw;
+    top: 25vw;
   }
   #yann h2 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   #developer {
-    left: 3vw;
+    left: 7.5vw;
+    top: 45vw;
     text-align: center;
     padding: 1vw;
   }
   #developer h1 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
 }

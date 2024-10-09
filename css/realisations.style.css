@@ -46,14 +46,16 @@
   background-color: rgba(0, 0, 0, 0.675);
 }
 .image-mod-container {
+  height: auto;
   background-color: black;
   border-radius: 5vw;
   padding: 3vw;
 }
 #modal-image {
-  display: flex;
-  align-items: center;
   width: 100%;
+  margin-top: 0 !important;
+  object-fit: contain;
+  border-radius: 3vw;
 }
 .modal h4 {
   margin: 3vw auto 1vw auto;
@@ -71,8 +73,11 @@
   line-height: 2.5vw;
 }
 .modal .close {
-  width: 15vw;
-  margin-top: 17vw;
+  float: none;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  margin: 7vw auto 2vw auto;
 }
 .modal-content {
   background-color: #fefefe;
@@ -92,34 +97,16 @@
   border-radius: 3vw;
   position: relative;
 }
-#modal-image {
-  width: 100%;
-  margin: 0;
-  object-fit: cover;
-  border-radius: 3vw;
-}
 
-.close {
-  float: none;
-  display: flex;
-  justify-content: center;
-  margin: 15vw auto 2vw auto;
-}
 .modal-content img {
   width: 4vw;
 }
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.3);
-}
+
 .project-link {
   display: flex;
   justify-content: center;
   color: black;
-  font-size: 3.5vw;
+  font-size: 5vw;
   margin: 3vw 3vw 0 1vw;
   text-decoration: none;
 }
@@ -136,7 +123,7 @@
   object-fit: contain;
   transform: rotate(90deg);
   margin: 2.3vw 1vw auto 0;
-  width: 5vw;
+  width: 7vw;
 }
 .chevron {
   position: absolute;
@@ -208,6 +195,9 @@
     color: rgb(138, 43, 226);
     left: 1.5vw;
   }
+  .modal .close {
+    width: 13vw;
+  }
   .modal h4 {
     font-size: 4vw;
   }
@@ -228,10 +218,12 @@
     margin-top: 13vw;
     width: 10vw;
   }
+  .close {
+    margin: 20vw auto 2vw auto !important;
+  }
   .chevron {
     display: none;
   }
-
   .swiper-container {
     width: 85%;
     height: 60vw;
