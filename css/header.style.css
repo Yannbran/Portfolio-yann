@@ -12,12 +12,12 @@
 }
 #social-link {
   display: flex;
-  justify-content: flex-start;
-  margin: 0 7vw 0 3vw;
+  justify-content: center;
+  margin: 0;
 }
 #social-link img {
-  width: 3vw;
-  margin-left: 2vw;
+  width: 4vw;
+  margin: 3vw 0 2vw 3vw;
   transition: transform 0.2s ease-in-out;
 }
 #social-link img:hover {
@@ -34,7 +34,7 @@
 .navbar nav a {
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: "Bebas Neue", sans-serif;
   transition: transform 0.2s ease, text-decoration 0.3s ease;
   display: inline-block;

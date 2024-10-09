@@ -64,7 +64,7 @@
 .modal p {
   background-color: black;
   color: #fefefe;
-  border-radius: 1vw;
+  border-radius: 2vw;
   padding: 1vw 1vw 1vw 3vw;
   font-size: 1.7vw;
   font-family: "Voltaire", sans-serif;
@@ -195,6 +195,9 @@
     font-size: 9vw;
     margin-bottom: 3vw;
   }
+  .swiper-slide h3 {
+    font-size: 5vw;
+  }
   .chevron {
     top: 487vw;
   }
@@ -204,6 +207,20 @@
   .swiper-button-prev {
     color: rgb(138, 43, 226);
     left: 1.5vw;
+  }
+  .modal h4 {
+    font-size: 4vw;
+  }
+  .modal p {
+    font-size: 2vw;
+    padding: 2vw;
+  }
+  #realisations-links img {
+    width: 9vw;
+  }
+  .project-link {
+    font-size: 8vw;
+    margin-top: 3vw;
   }
 }
 @media (max-width: 768px) {
@@ -221,10 +238,10 @@
   }
   .swiper-slide img {
     height: 40vw;
-    margin-top: 4vw;
+    margin-top: 2vw;
   }
   .swiper-slide h3 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .swiper-button-next::after,
   .swiper-button-prev::after {
