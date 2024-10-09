@@ -17,7 +17,7 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
 
 
 (function() {
-    emailjs.init("_-cslyDMgul-VWq-a"); 
+    emailjs.init(window.EMAILJS_USER_ID); 
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
