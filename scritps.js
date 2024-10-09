@@ -17,7 +17,7 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
 
 
 (function() {
-    emailjs.init("EMAILJS_USER_ID"); 
+    emailjs.init("_-cslyDMgul-VWq-a"); 
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -135,9 +135,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        const headerOffset = document.querySelector('.header').offsetHeight; // Hauteur du header
-        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - headerOffset;
+        const offset = 6 * window.innerWidth / 100; // 6vw en pixels
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - offset;
 
         window.scrollTo({
             top: offsetPosition,
