@@ -23,7 +23,7 @@
   left: 6%;
   padding: 3vw;
 }
-#developer p {
+#developer h1 {
   font-size: 9vw;
   margin: 0;
 }
@@ -49,7 +49,7 @@
     text-align: center;
     padding: 1vw;
   }
-  #developer p {
+  #developer h1 {
     font-size: 10vw;
   }
 }
