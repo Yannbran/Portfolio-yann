@@ -1,5 +1,6 @@
 #acceuil-img {
   width: 100%;
+  height: auto;
   object-fit: contain;
   margin-bottom: 2vw;
 }
