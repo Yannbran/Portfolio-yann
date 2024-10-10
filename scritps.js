@@ -17,7 +17,7 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
 
 
 (function() {
-    emailjs.init(window.EMAILJS_USER_ID); 
+    emailjs.init("_-cslyDMgul-VWq-a"); 
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -135,8 +135,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        const offset = 6 * window.innerWidth / 100; // 6vw en pixels
-        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offset = window.innerWidth * 0.06; // 6vw en pixels
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - offset;
 
         window.scrollTo({
