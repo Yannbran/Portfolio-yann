@@ -1,8 +1,0 @@
-[build]
-  publish = "."
-
-[context.production.environment]
-  EMAILJS_USER_ID = "_-cslyDMgul-VWq-a"
-
-  [functions]
-  directory = "netlify/functions"
