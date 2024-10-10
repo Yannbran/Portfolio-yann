@@ -23,7 +23,7 @@
   text-align: center;
   margin-bottom: 2vw;
 }
-.card p {
+.card h4 {
   text-align: center;
   font-family: "Voltaire", sans-serif;
   font-size: 2vw;
@@ -53,7 +53,7 @@
   .card h3 {
     font-size: 4vw;
   }
-  .card p {
+  .card h4 {
     font-size: 3vw;
   }
 }
@@ -75,7 +75,7 @@
   .logo-html img {
     height: 22vw;
   }
-  .card p {
+  .card h4 {
     font-size: 5vw;
   }
 }
