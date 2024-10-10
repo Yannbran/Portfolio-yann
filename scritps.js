@@ -17,7 +17,12 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
 
 
 (function() {
-    emailjs.init("_-cslyDMgul-VWq-a"); 
+    fetch('/.netlify/functions/getEmailJsUserId')
+        .then(response => response.json())
+        .then(data => {
+            emailjs.init(data.userId);
+        })
+        .catch(error => console.error('Error fetching EmailJS user ID:', error));
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
