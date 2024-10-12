@@ -21,6 +21,7 @@
 }
 #link-mail {
   margin-top: 2vw;
+  font-size: 5vw;
 }
 #contact h3 {
   margin-top: 7vw;
@@ -116,5 +117,8 @@ label {
     font-size: 5vw;
     width: 70%;
     height: 5vw;
+  }
+  #link-mail {
+    font-size: 7vw;
   }
 }
