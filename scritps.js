@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var cookieBanner = document.getElementById("cookie-banner");
     var acceptButton = document.getElementById("accept-button");
 
-    // Vérifie si l'utilisateur a déjà accepté
-    if (!localStorage.getItem("cookieAccepted")) {
+    // Vérifie si l'utilisateur a déjà accepté les cookies
+    if (localStorage.getItem("cookieAccepted") === "true") {
+        cookieBanner.style.display = "none";
+    } else {
         cookieBanner.style.display = "flex";
     }
 
