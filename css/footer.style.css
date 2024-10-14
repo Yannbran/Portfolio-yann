@@ -54,7 +54,7 @@ footer h2 {
 }
 .legal-content p {
   font-family: "Voltaire", sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   color: black;
   background-color: transparent;
   padding: 0;
@@ -75,33 +75,57 @@ footer h2 {
     font-size: 2.5vw;
   }
   .close-legal {
-    top: 14vw;
+    top: 15vw;
   }
 }
 @media (max-width: 768px) {
   footer h2 {
     font-size: 3vw;
   }
+  .legal-content p {
+    font-size: 4vw;
+  }
+  .legal-content h3 {
+    font-size: 7vw;
+  }
   .close-legal {
-    top: 17vw;
+    top: 18vw;
+    left: 85vw;
+  }
+}
+@media (max-width: 600px) {
+  .close-legal {
+    top: 24vw;
   }
 }
 @media (max-width: 426px) {
   .close-legal {
-    top: 23vw;
+    top: 24vw;
   }
   .legal-content h3 {
     font-size: 7vw;
   }
   .legal-content h4 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
   .legal-content p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
+
+@media (max-width: 376px) {
+  .close-legal {
+    top: 26vw;
+  }
+}
+
 @media (max-width: 320px) {
   .close-legal {
     top: 28vw;
+  }
+}
+@media (max-width: 271px) {
+  .close-legal {
+    top: 33vw;
   }
 }
