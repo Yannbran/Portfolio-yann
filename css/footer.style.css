@@ -1,23 +1,25 @@
 footer {
   width: 100%;
-  height: auto;
+  height: 10vw;
   background-color: black;
   color: white;
   margin-top: 7vw;
-  padding: 2vw 0;
+  padding: 2vw 0 3vw 0;
 }
 footer h2 {
   font-size: 2vw;
+  font-weight: 100;
   text-align: center;
   margin-top: 2vw;
-  padding: 3vw;
+  padding-top: 3vw;
 }
 .footer-links {
   text-align: center;
   width: 100%;
   font-size: 3vw;
-  margin-top: 3vw;
+  margin-top: 1vw;
 }
+
 .footer-links a {
   color: white;
   margin: 3vw 1vw;
