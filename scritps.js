@@ -52,3 +52,25 @@ document.querySelectorAll('.nav-link').forEach(link => {
         });
     });
 });
+
+
+var modal = document.getElementById("legal-modal");
+var btn = document.getElementById("open-modal");
+var span = document.getElementsByClassName("close-legales")[0];
+
+// Ouvrir la modale
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Fermer la modale
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Fermer la modale quand on clique en dehors de celle-ci
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
