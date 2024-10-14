@@ -4,6 +4,13 @@
 main {
   justify-content: center;
 }
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+p {
+  font-family: "Voltaire", sans-serif;
+}
 .section-bar {
   margin: 0 auto;
   width: 80%;

@@ -61,7 +61,6 @@
   margin: 3vw auto 1vw auto;
   text-align: center;
   font-size: 3vw;
-  font-family: "Bebas Neue", sans-serif;
 }
 .modal p {
   background-color: black;
@@ -69,7 +68,6 @@
   border-radius: 2vw;
   padding: 1vw 1vw 1vw 3vw;
   font-size: 1.7vw;
-  font-family: "Voltaire", sans-serif;
   line-height: 2.5vw;
 }
 .modal .close {
