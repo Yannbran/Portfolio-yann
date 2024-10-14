@@ -1,27 +1,26 @@
 footer {
-  display: flex;
   width: 100%;
   height: auto;
   background-color: black;
   color: white;
-  align-items: center;
-  align-content: center;
   margin-top: 7vw;
+  padding: 2vw 0;
 }
 footer h2 {
-  width: 60%;
-  font-size: 3vw;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 2vw;
+  padding: 3vw;
 }
 .footer-links {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  width: 40%;
+  width: 100%;
   font-size: 3vw;
+  margin-top: 3vw;
 }
 .footer-links a {
   color: white;
-  margin-top: 2vw;
+  margin: 3vw 1vw;
 }
 .modal {
   display: none;

@@ -75,11 +75,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var modales = {
         legal: document.getElementById("legales"),
         terms: document.getElementById("conditions"),
+        confidential: document.getElementById("confidential"),
         cookie: document.getElementById("cookie-modal")
     };
 
     var openLegalModal = document.getElementById("open-legal-modal");
     var openTermsModal = document.getElementById("open-terms-modal");
+    var openConfidentialModal = document.getElementById("open-confidential-modal")
     var openCookieModal = document.getElementById("open-cookie-modal");
 
     var closeButtons = document.getElementsByClassName("close-legal");
@@ -94,6 +96,11 @@ document.addEventListener("DOMContentLoaded", function() {
     openTermsModal.onclick = function(event) {
         event.preventDefault();
         modales.terms.style.display = "block";
+    };
+
+    openConfidentialModal.onclick = function(event) {
+        event.preventDefault();
+        modales.confidential.style.display = "block";
     };
 
     // Ouvrir la modale Politique des Cookies
