@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var acceptButton = document.getElementById("accept-button");
 
     // Vérifie si l'utilisateur a déjà accepté les cookies
-    if (localStorage.getItem("cookieAccepted") === "true") {
+    if (localStorage.getItem("cookieAccepted") = "true") {
         cookieBanner.style.display = "none";
     } else {
         cookieBanner.style.display = "flex";
