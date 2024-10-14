@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var cookieBanner = document.getElementById("cookie-banner");
+    var acceptButton = document.getElementById("accept-button");
+
+    // Vérifie si l'utilisateur a déjà accepté
+    if (!localStorage.getItem("cookieAccepted")) {
+        cookieBanner.style.display = "flex";
+    }
+
+    // Ferme la bannière et enregistre l'acceptation
+    acceptButton.onclick = function() {
+        cookieBanner.style.display = "none";
+        localStorage.setItem("cookieAccepted", "true");
+    };
+});
+
+
 function toggleMenu() {
     const mobileNav = document.querySelector('.mobile-nav');
     const burgerMenu = document.querySelector('.burger-menu');
