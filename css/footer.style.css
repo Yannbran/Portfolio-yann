@@ -1,24 +1,29 @@
 footer {
   display: flex;
-  justify-content: center;
   width: 100%;
-  height: 7vw;
+  height: auto;
   background-color: black;
   color: white;
   align-items: center;
+  align-content: center;
   margin-top: 7vw;
 }
 footer h2 {
+  width: 60%;
   font-size: 3vw;
-  margin-right: 2vw;
 }
-#open-modal {
-  font-size: 2vw;
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  font-size: 3vw;
+}
+.footer-links a {
   color: white;
-  margin-right: 3vw;
-  cursor: pointer;
+  margin-top: 2vw;
 }
-.mentions-legales {
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -27,48 +32,76 @@ footer h2 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.733);
+  background-color: rgba(0, 0, 0, 0.737);
   padding-top: 60px;
 }
 
-.legales-content {
+.legal-content {
   text-align: center;
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
+  margin: 10vw auto;
+  padding: 2vw;
   border-radius: 5vw;
   width: 80%;
   color: black;
+  background-color: white;
 }
-.legales-content h2 {
+.legal-content h3 {
   font-size: 5vw;
   margin: auto;
 }
-.legales-content h3 {
+.legal-content h4 {
   font-size: 3vw;
   margin: 2vw;
 }
-.legales-content p {
+.legal-content p {
   font-family: "Voltaire", sans-serif;
   font-size: 2vw;
+  color: black;
+  background-color: transparent;
+  padding: 0;
 }
 
-.close-legales {
+.close-legal {
   position: absolute;
   color: #000000;
   float: right;
-  top: 10vw;
-  left: 80vw;
+  top: 12vw;
+  left: 82vw;
   font-size: 10vw;
   cursor: pointer;
 }
-
-@media (max-width: 768px) {
-  footer {
-    height: 14vw;
+@media (max-width: 1024px) {
+  .legal-content p {
+    font-size: 2.5vw;
   }
+  .close-legal {
+    top: 15vw;
+  }
+}
+@media (max-width: 768px) {
   footer h2 {
-    font-size: 4vw;
+    font-size: 3vw;
+  }
+  .close-legal {
+    top: 17vw;
+  }
+}
+@media (max-width: 426px) {
+  .close-legal {
+    top: 23vw;
+  }
+  .legal-content h3 {
+    font-size: 7vw;
+  }
+  .legal-content h4 {
+    font-size: 5vw;
+  }
+  .legal-content p {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 320px) {
+  .close-legal {
+    top: 28vw;
   }
 }

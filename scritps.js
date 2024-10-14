@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 });
 
-
 function toggleMenu() {
     const mobileNav = document.querySelector('.mobile-nav');
     const burgerMenu = document.querySelector('.burger-menu');
@@ -71,23 +70,53 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-var modal = document.getElementById("legal-modal");
-var btn = document.getElementById("open-modal");
-var span = document.getElementsByClassName("close-legales")[0];
+document.addEventListener("DOMContentLoaded", function() {
+    // Récupération des éléments modales et des boutons de fermeture
+    var modales = {
+        legal: document.getElementById("legales"),
+        terms: document.getElementById("conditions"),
+        cookie: document.getElementById("cookie-modal")
+    };
 
-// Ouvrir la modale
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+    var openLegalModal = document.getElementById("open-legal-modal");
+    var openTermsModal = document.getElementById("open-terms-modal");
+    var openCookieModal = document.getElementById("open-cookie-modal");
 
-// Fermer la modale
-span.onclick = function() {
-    modal.style.display = "none";
-}
+    var closeButtons = document.getElementsByClassName("close-legal");
 
-// Fermer la modale quand on clique en dehors de celle-ci
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    // Ouvrir la modale Mentions Légales
+    openLegalModal.onclick = function(event) {
+        event.preventDefault();
+        modales.legal.style.display = "block";
+    };
+
+    // Ouvrir la modale Conditions Générales
+    openTermsModal.onclick = function(event) {
+        event.preventDefault();
+        modales.terms.style.display = "block";
+    };
+
+    // Ouvrir la modale Politique des Cookies
+    openCookieModal.onclick = function(event) {
+        event.preventDefault();
+        modales.cookie.style.display = "block";
+    };
+
+    // Fermer les modales en cliquant sur les boutons de fermeture
+    for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].onclick = function() {
+            for (var key in modales) {
+                modales[key].style.display = "none";
+            }
+        }
     }
-}
+
+    // Fermer les modales en cliquant en dehors
+    window.onclick = function(event) {
+        for (var key in modales) {
+            if (event.target == modales[key]) {
+                modales[key].style.display = "none";
+            }
+        }
+    }
+});
