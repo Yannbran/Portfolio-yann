@@ -122,7 +122,7 @@
 .chevron {
   position: absolute;
   z-index: 1;
-  top: 367vw;
+  top: 385vw;
   margin: 0 5vw;
 }
 .swiper-button-next {
@@ -183,7 +183,7 @@
     font-size: 5vw;
   }
   .chevron {
-    top: 487vw;
+    top: 505vw;
   }
   .swiper-button-next {
     left: 85vw;
