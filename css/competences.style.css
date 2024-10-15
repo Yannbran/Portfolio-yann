@@ -39,8 +39,13 @@
   width: 90%;
 }
 .logo-html img {
+  width: 10vw;
   height: 10vw;
   margin: 0.5vw;
+}
+.logo-html img#node {
+  width: 15vw;
+  height: 10vw;
 }
 #mongo {
   margin-left: 2vw;
