@@ -78,6 +78,11 @@
   }
   .logo-html img {
     height: 22vw;
+    width: 22vw;
+  }
+  .logo-html img#node {
+    width: 35vw;
+    height: 22vw;
   }
   .card h4 {
     font-size: 5vw;

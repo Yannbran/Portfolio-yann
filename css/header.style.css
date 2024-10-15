@@ -17,6 +17,7 @@
 }
 #social-link img {
   width: 4vw;
+  height: 4vw;
   margin: 3vw 0 2vw 3vw;
   transition: transform 0.2s ease-in-out;
 }
@@ -76,6 +77,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 7vw;
+  font-family: "Bebas Neue", sans-serif;
 }
 @media (max-width: 768px) {
   .navbar {
@@ -89,6 +91,7 @@
   }
   #social-link img {
     width: 9vw;
+    height: 9vw;
     margin: 2vw 2vw 0 4vw;
   }
 
