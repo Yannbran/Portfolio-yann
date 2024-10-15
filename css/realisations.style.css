@@ -35,13 +35,10 @@
   height: 32vw;
 }
 .modal {
-  display: none;
   position: fixed;
   z-index: 1;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.675);
 }
@@ -73,6 +70,7 @@
 .modal .close {
   float: none;
   width: 10vw;
+  height: 10vw;
   display: flex;
   justify-content: center;
   margin: 7vw auto 2vw auto;
@@ -106,12 +104,12 @@
   color: black;
   font-size: 5vw;
   margin: 3vw 3vw 0 1vw;
-  text-decoration: none;
 }
 .project-link:hover {
   color: blueviolet;
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
 }
 #realisations-links {
   display: flex;
@@ -122,6 +120,7 @@
   transform: rotate(90deg);
   margin: 2.3vw 1vw auto 0;
   width: 7vw;
+  height: 7vw;
 }
 .chevron {
   position: absolute;
@@ -195,6 +194,7 @@
   }
   .modal .close {
     width: 13vw;
+    height: 13vw;
   }
   .modal h4 {
     font-size: 4vw;
@@ -205,6 +205,7 @@
   }
   #realisations-links img {
     width: 9vw;
+    height: 9vw;
   }
   .project-link {
     font-size: 8vw;
@@ -215,6 +216,7 @@
   .modal img {
     margin-top: 13vw;
     width: 10vw;
+    height: auto;
   }
   .close {
     margin: 20vw auto 2vw auto !important;
@@ -260,9 +262,10 @@
   }
   #realisations-links img {
     width: 10vw;
+    height: auto;
   }
   .project-link {
-    font-size: 8vw;
+    font-size: 7vw;
     margin-top: 3vw;
   }
 }
