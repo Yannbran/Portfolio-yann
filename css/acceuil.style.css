@@ -8,8 +8,9 @@
 #developer {
   position: absolute;
   color: white;
-  background-color: rgba(0, 0, 0, 0.748);
+  background-color: rgba(0, 0, 0, 0.688);
   border-radius: 5vw;
+  padding: 1vw 3vw !important;
 }
 #yann {
   display: flex;
