@@ -38,9 +38,8 @@
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 90%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.675);
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.756);
 }
 .image-mod-container {
   height: auto;
@@ -68,20 +67,18 @@
   line-height: 2.5vw;
 }
 .modal .close {
-  float: none;
-  width: 10vw;
-  height: 10vw;
-  display: flex;
-  justify-content: center;
-  margin: 7vw auto 2vw auto;
+  position: fixed;
+  width: 7vw;
+  height: 7vw;
+  margin: 5vw 3vw;
 }
 .modal-content {
+  position: relative;
   background-color: #fefefe;
   margin: 3vw auto;
   padding: 2vw 4vw;
   border-radius: 3vw;
   width: 60%;
-  height: auto;
 }
 
 #modal-title {
@@ -175,6 +172,9 @@
   right: 3vw;
 }
 @media (max-width: 1024px) {
+  .modal {
+    height: 94%;
+  }
   #realisations h2 {
     font-size: 9vw;
     margin-bottom: 3vw;
@@ -193,8 +193,9 @@
     left: 1.5vw;
   }
   .modal .close {
-    width: 13vw;
-    height: 13vw;
+    width: 9vw;
+    height: 9vw;
+    margin-top: 3vw;
   }
   .modal h4 {
     font-size: 4vw;
@@ -208,7 +209,7 @@
     height: 9vw;
   }
   .project-link {
-    font-size: 8vw;
+    font-size: 7vw;
     margin-top: 3vw;
   }
 }
@@ -219,7 +220,7 @@
     height: auto;
   }
   .close {
-    margin: 20vw auto 2vw auto !important;
+    margin: 10vw 1vw !important;
   }
   .chevron {
     display: none;
@@ -241,8 +242,8 @@
     font-weight: 1000;
   }
   .modal-content {
-    margin-top: 5vw;
-    width: 80%;
+    margin-top: 15vw;
+    width: 70%;
   }
   .modal h4 {
     font-size: 6vw;
@@ -267,5 +268,17 @@
   .project-link {
     font-size: 7vw;
     margin-top: 3vw;
+  }
+}
+@media (max-width: 426px) {
+  .modal {
+    height: 92%;
+  }
+  .modal-content {
+    margin-top: 7vw;
+    width: 65%;
+  }
+  .close {
+    margin: 6vw 2vw !important;
   }
 }
