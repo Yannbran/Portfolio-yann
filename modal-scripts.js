@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             slide.setAttribute('data-index', index);
             slide.innerHTML = `
                 <h3>${project.title}</h3>
-                <img src="${project.image}">
+                <img src="${project.image}" alt=" image du projet ${project.image}">
             `;
             swiperWrapper.appendChild(slide);
         });

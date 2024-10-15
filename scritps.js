@@ -60,7 +60,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        const offset = window.innerWidth * 0.06; // 6vw en pixels
+        const offset = window.innerWidth * 0.06;
         const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - offset;
 
