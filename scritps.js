@@ -15,21 +15,53 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("cookieAccepted", "true");
     };
 });
-
+// Fonction pour basculer le menu
 function toggleMenu() {
     const mobileNav = document.querySelector('.mobile-nav');
     const burgerMenu = document.querySelector('.burger-menu');
     mobileNav.classList.toggle('active');
-    burgerMenu.classList.toggle('cross'); 
+    burgerMenu.classList.toggle('cross');
 }
+
+// Cloner les liens de navigation
+document.querySelectorAll('.nav-links-container').forEach(container => {
+    container.innerHTML = `
+        <nav>
+            <a class="nav-link" href="#acceuil">Acceuil</a>
+            <a class="nav-link" href="#presentation">Présentation</a>
+            <a class="nav-link" href="#competences">Compétences</a>
+            <a class="nav-link" href="#realisations">Réalisations</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    `;
+});
+
+// Ajouter des événements de clic pour la navigation mobile
 document.querySelectorAll('.mobile-nav a').forEach(link => {
     link.addEventListener('click', () => {
         const mobileNav = document.querySelector('.mobile-nav');
         const burgerMenu = document.querySelector('.burger-menu');
         mobileNav.classList.remove('active');
-        burgerMenu.classList.remove('cross'); 
+        burgerMenu.classList.remove('cross');
     });
 });
+
+// Ajouter des événements de clic pour une navigation fluide
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = window.innerWidth * 0.06;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
 (function() {
     fetch('/.netlify/functions/getEmailJsUserId')
         .then(response => response.json())
@@ -55,22 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 });
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        const offset = window.innerWidth * 0.06;
-        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    });
-});
-
 
 document.addEventListener("DOMContentLoaded", function() {
     // Récupération des éléments modales et des boutons de fermeture

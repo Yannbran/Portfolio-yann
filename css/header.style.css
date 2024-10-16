@@ -28,24 +28,23 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 70%;
+  justify-content: flex-end;
+  width: 80%;
   margin-right: 2vw;
 }
-.navbar nav a {
+.header .navbar .nav-link {
   text-decoration: none;
   color: white;
   font-size: 3vw;
   font-family: "Bebas Neue", sans-serif;
-  transition: transform 0.2s ease, text-decoration 0.3s ease;
-  display: inline-block;
+  margin-right: 4vw;
 }
-.navbar nav a:hover {
+
+.header .navbar .nav-link:hover {
   color: white;
   text-decoration: underline;
   text-underline-offset: 0.3vw;
   cursor: pointer;
-  transform: scale(1.3);
 }
 .burger-menu {
   display: none;
