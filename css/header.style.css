@@ -36,9 +36,9 @@
 .header .navbar .nav-link {
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-family: "Bebas Neue", sans-serif;
-  margin-right: 7vw;
+  margin-right: 5vw;
 }
 
 .header .navbar .nav-link:hover {

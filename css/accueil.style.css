@@ -1,4 +1,4 @@
-#acceuil-img {
+#accueil-img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -14,8 +14,9 @@
 }
 #yann {
   display: flex;
-  top: 17vw;
   left: 12vw;
+
+  top: 17vw;
   padding: 1.5vw;
   align-items: center;
 }
@@ -41,6 +42,22 @@
   font-size: 8vw;
   font-weight: 500;
   margin: 0;
+}
+@media (max-width: 1920px) {
+  #developer {
+    top: 30vw;
+  }
+  #yann {
+    top: 13vw;
+  }
+}
+@media (max-width: 1440px) {
+  #developer {
+    top: 40vw;
+  }
+  #yann {
+    top: 17vw;
+  }
 }
 @media (max-width: 1024px) {
   #developer h1 {

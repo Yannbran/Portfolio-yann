@@ -27,7 +27,7 @@ function toggleMenu() {
 document.querySelectorAll('.nav-links-container').forEach(container => {
     container.innerHTML = `
         <nav>
-            <a class="nav-link" href="#accueil">Acceuil</a>
+            <a class="nav-link" href="#accueil">Accueil</a>
             <a class="nav-link" href="#presentation">Présentation</a>
             <a class="nav-link" href="#competences">Compétences</a>
             <a class="nav-link" href="#realisations">Réalisations</a>
