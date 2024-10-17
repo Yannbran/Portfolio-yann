@@ -2,7 +2,7 @@
   width: 100%;
 }
 #realisations h2 {
-  font-size: 7vw;
+  font-size: 5vw;
   text-align: center;
   margin: 7vw auto 2vw auto;
 }
@@ -122,7 +122,7 @@
 .chevron {
   position: absolute;
   z-index: 1;
-  top: 385vw;
+  top: 365vw;
   margin: 0 5vw;
 }
 .swiper-button-next {
@@ -183,7 +183,7 @@
     font-size: 5vw;
   }
   .chevron {
-    top: 505vw;
+    top: 515vw;
   }
   .swiper-button-next {
     left: 85vw;

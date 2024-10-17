@@ -15,7 +15,7 @@
 #yann {
   display: flex;
   top: 17vw;
-  left: 15vw;
+  left: 12vw;
   padding: 1.5vw;
   align-items: center;
 }
@@ -28,6 +28,7 @@
 }
 #developer h1 {
   font-size: 9vw;
+  font-weight: 200;
   margin: 0;
 }
 #yann img {

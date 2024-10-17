@@ -18,19 +18,20 @@
   align-items: center;
 }
 .mail-contact p {
-  font-size: 7vw;
+  font-size: 4vw;
 }
 #link-mail {
   margin-top: 2vw;
-  font-size: 5vw;
+  font-size: 4vw;
+  margin-bottom: 5vw;
 }
 #contact h3 {
   margin-top: 7vw;
-  font-size: 7vw;
+  font-size: 5vw;
 }
 #contact h4 {
   font-family: "Voltaire", sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   margin-top: 2vw;
 }
 .contact-form label {
