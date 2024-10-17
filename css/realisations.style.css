@@ -171,6 +171,17 @@
   position: absolute;
   right: 3vw;
 }
+@media (max-width: 1920px) {
+  .chevron {
+    top: 387vw;
+  }
+}
+@media (max-width: 1440px) {
+  .chevron {
+    top: 367vw;
+  }
+}
+
 @media (max-width: 1024px) {
   .modal {
     height: 94%;
@@ -183,7 +194,7 @@
     font-size: 5vw;
   }
   .chevron {
-    top: 515vw;
+    top: 510vw;
   }
   .swiper-button-next {
     left: 85vw;
