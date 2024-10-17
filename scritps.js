@@ -27,7 +27,7 @@ function toggleMenu() {
 document.querySelectorAll('.nav-links-container').forEach(container => {
     container.innerHTML = `
         <nav>
-            <a class="nav-link" href="#acceuil">Acceuil</a>
+            <a class="nav-link" href="#accueil">Acceuil</a>
             <a class="nav-link" href="#presentation">Présentation</a>
             <a class="nav-link" href="#competences">Compétences</a>
             <a class="nav-link" href="#realisations">Réalisations</a>
@@ -36,7 +36,7 @@ document.querySelectorAll('.nav-links-container').forEach(container => {
     `;
 });
 
-// Ajouter des événements de clic pour la navigation mobile
+// Ajouter des événements de clic pour la navigation 
 document.querySelectorAll('.mobile-nav a').forEach(link => {
     link.addEventListener('click', () => {
         const mobileNav = document.querySelector('.mobile-nav');
