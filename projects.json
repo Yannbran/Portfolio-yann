@@ -29,7 +29,7 @@
     "problemsText": "Les principales problématiques rencontrées incluaient des temps de chargement lents et une structure de code inefficace, ce qui affectait négativement le référencement et l’accessibilité du site.<br> Pour résoudre ces problèmes, j’ai utilisé des outils d’audit pour identifier les points faibles et proposé des solutions telles que l’optimisation des images, la minification des fichiers CSS et JavaScript, et l’amélioration de la structure HTML.<br> J’ai également mis en place des pratiques de développement accessibles pour garantir que le site soit utilisable par tous les utilisateurs, y compris ceux ayant des handicaps.<br> Ces actions ont permis d’améliorer significativement les performances du site et son accessibilité, contribuant ainsi à une meilleure expérience utilisateur et à un meilleur référencement.",
     "competences": "Compétences développées",
     "competencesText": "- Optimiser les performances d’un site web.<br> - Débugger un site web grâce aux Chrome DevTools.<br> - Rédiger un cahier de recette pour tester un site.",
-    "link": "https://github.com/Yannbran/Nina-Carducci-Dev.git",
+    "link": "https://nina-carducci-dev-gold.vercel.app/#about",
     "image": "/images/nina-screen.webp"
   },
   {
