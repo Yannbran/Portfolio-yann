@@ -5,12 +5,12 @@
   padding-bottom: 2vw;
 }
 .contact-form {
-  background-color: #2c2c2c;
+  background-color: #000000;
   padding: 2vw;
   border-radius: 3vw;
-  box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.9);
+  box-shadow: 0 1vw 4vw rgb(0, 0, 0);
   width: 70%;
-  margin: 2vw auto;
+  margin: 2vw auto 7vw auto;
   border: none;
 }
 .mail-contact {
@@ -21,9 +21,31 @@
   font-size: 4vw;
 }
 #link-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 5vw;
   margin-top: 2vw;
-  font-size: 4vw;
-  margin-bottom: 5vw;
+  font-size: 3vw;
+  margin: 4vw auto 5vw auto;
+  background-color: black;
+  border-radius: 5vw;
+  box-shadow: 0 1vw 4vw rgb(0, 0, 0);
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#link-mail a {
+  color: white;
+  font-family: "Voltaire", sans-serif;
 }
 #contact h3 {
   margin-top: 7vw;
@@ -31,24 +53,24 @@
 }
 #contact h4 {
   font-family: "Voltaire", sans-serif;
-  font-size: 3vw;
+  font-size: 2vw;
   margin-top: 2vw;
 }
 .contact-form label {
   display: block;
   margin: 3vw auto 1vw auto;
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .contact-form input,
 .contact-form textarea {
   width: 60%;
-  height: 5vw;
+  height: 3vw;
   padding: 1vw;
   margin-bottom: 1vw;
   border: none;
   border-radius: 2vw;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: "Voltaire", sans-serif;
 }
 #message {
@@ -57,7 +79,7 @@
 .contact-form button {
   background-color: #ffffff;
   color: #000000;
-  width: 42%;
+
   margin-top: 2vw auto;
   font-size: 3vw;
   padding: 1vw;
@@ -72,16 +94,12 @@
   color: white;
   border: 0.5vw solid rgb(255, 255, 255);
 }
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10vw;
-  width: 60vw;
-}
+
 .btn-envoyer {
-  font-size: 5vw !important;
-  width: 30vw !important;
+  font-size: 3vw !important;
+  font-weight: 600;
+  width: 20vw !important;
+  font-family: "Voltaire", sans-serif;
 }
 button img {
   width: 9vw;
@@ -92,7 +110,7 @@ button img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 40%;
   margin: 3vw auto;
 }
 label {
@@ -123,6 +141,6 @@ label {
     height: 5vw;
   }
   #link-mail {
-    font-size: 7vw;
+    font-size: 3.5vw;
   }
 }

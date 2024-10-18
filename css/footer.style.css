@@ -3,10 +3,10 @@ footer {
   height: auto;
   background-color: black;
   color: white;
-  padding: 0 0 3vw 0;
+  padding: 0 0 1vw 0;
 }
 footer h2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 100;
   text-align: center;
   margin-top: 2vw;
@@ -17,12 +17,13 @@ footer h2 {
   align-items: center;
   text-align: center;
   width: 100%;
-  font-size: 3vw;
+  font-size: 1.7vw;
 }
 
 .footer-links a {
   color: white;
-  margin: 3vw 1vw;
+  margin: 3vw 1vw 1vw 1vw;
+  font-family: "Voltaire", sans-serif;
 }
 .modal {
   display: none;
