@@ -40,6 +40,17 @@
   font-weight: 500;
   margin: 0;
 }
+@media (max-width: 2560px) {
+  #developer {
+    top: 32vw;
+    left: 4.5vw;
+  }
+  #yann {
+    top: 15vw;
+
+    left: 17vw;
+  }
+}
 @media (max-width: 1920px) {
   #developer {
     top: 32vw;
