@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/public/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +43,7 @@
   text-decoration: none;
   color: white;
   font-size: 2.5vw;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   margin-right: 5vw;
 }
 
@@ -77,7 +83,7 @@
   text-align: center;
   text-decoration: none;
   font-size: 7vw;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
 }
 @media (max-width: 768px) {
   .navbar {

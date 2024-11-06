@@ -1,13 +1,21 @@
 * {
   margin: 0;
 }
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/public/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Voltaire";
+  src: url("/public/fonts/Voltaire-Regular.ttf") format("truetype");
+}
 main {
   justify-content: center;
   background-color: #ffffff;
 }
 h2,
 h3 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
 }
 h4,
 p {

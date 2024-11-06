@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/public/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pinyon Script";
+  src: url("/public/fonts/PinyonScript-Regular.ttf") format("truetype");
+}
 #accueil-img {
   width: 100%;
   height: auto;
@@ -22,7 +30,7 @@
   top: 40vw;
   left: 6%;
   padding: 3vw;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
 }
 #developer h1 {
   font-size: 9vw;
